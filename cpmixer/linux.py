@@ -3,9 +3,13 @@ from template import MixerTemplate
 
 
 class Mixer(MixerTemplate):
-    def __init__(self,*args,**kwargs):
+    def __init__(self, *args, **kwargs):
         super().__init__(
             self,
+            get_mute_method=self._gmute,
+            set_mute_method=self._smute,
+            get_volume_method=self._gvol,
+            set_volume_method=self._svol,
             *args,
             **kwargs,
         )
