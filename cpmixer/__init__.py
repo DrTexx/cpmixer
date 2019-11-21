@@ -61,7 +61,7 @@ __classifiers__ = [
     "Topic :: Software Development",
     "Topic :: Software Development :: Libraries",
 ]
-__requires_dist__ = []  # requirements
+__requires_dist__ = ["pyalsaaudio"]  # requirements
 __setup_requires__ = ["wheel", "setuptools"]
 __requires_python__ = [">=3"]  # required python version
 __requires_external__ = []  # external requirements
